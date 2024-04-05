@@ -1,2 +1,2 @@
 # Hug-Finder
-Repository for Development of the app Hug Finder
+Reposity made by Murphy Glawe for fun
