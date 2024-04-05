@@ -9,23 +9,26 @@ export default function LoginSignupScreen({ navigation }) {
                 <Image style={styles.HFBackground1} source={require('./assets/HF-background (2).png')} />
                 <Image style={styles.HFBackground2} source={require('./assets/HF-background (2).png')} />
                 <Image style={styles.HFLogo} source={require('./assets/HF-logo.png')} />
-                <View style={styles.loginSignup}>
-                    <TouchableOpacity style={styles.loginButton} onPress={() => navigation.navigate('LoginScreen')}>
-                        <Text style={styles.startButtonText}>Login</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={styles.signupButton} onPress={() => navigation.navigate('SignupSreen')}>
-                        <Text style={styles.startButtonText}>Signup</Text>
-                    </TouchableOpacity>
-                </View>
             </View>
         </View>
-      </View>
+        <View style={styles.loginSignup}>
+            <TouchableOpacity style={styles.loginButton} onPress={() => navigation.navigate('LoginScreen')}>
+                <Text style={styles.startButtonText}>Login</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.signupButton} onPress={() => navigation.navigate('SignupScreen')}>
+                <Text style={styles.startButtonText}>Signup</Text>
+            </TouchableOpacity>
+        </View>
+    </View>
     );
   }
   
 const styles = StyleSheet.create({
     startScreen: {
         flex: 1,
+        alignContent: "center",
+        justifyContent: "center",
+        alignItems: "center",
     },
     
     overlapGroupWrapper: {
@@ -69,7 +72,7 @@ const styles = StyleSheet.create({
         top: "50%",
         left: "50%",
         transform: [{ translateX: -50 }, { translateY: -50 }],
-        zuIndex: 1,
+        zIndex: 1,
     },
 
     loginSignup: {

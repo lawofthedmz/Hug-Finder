@@ -10,18 +10,20 @@ export default function StartScreen({ navigation }) {
                 <Image style={styles.HFBackground1} source={require('./assets/HF-background (2).png')} />
                 <Image style={styles.HFBackground2} source={require('./assets/HF-background (2).png')} />
                 <Image style={styles.HFLogo} source={require('./assets/HF-logo.png')} />
-                <TouchableOpacity style={styles.startButton} onPress={()=> navigation.navigate("LoginSignupScreen")}>
-                    <Text style={styles.startButtonText}>Get Started</Text>
-                </TouchableOpacity>    
             </View>
         </View>
-      </View>
+        <TouchableOpacity style={styles.startButton} onPress={()=> navigation.navigate("LoginSignupScreen")}>
+                    <Text style={styles.startButtonText}>Get Started</Text>
+        </TouchableOpacity>
+    </View>
     );
 }
   
 const styles = StyleSheet.create({
     startScreen: {
         flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
     },
     
     overlapGroupWrapper: {
