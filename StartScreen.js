@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
         top: "50%",
         left: "50%",
         transform: [{ translateX: -50 }, { translateY: -50 }],
-        zuIndex: 1,
+        zIndex: 1,
     },
     
     startButton: {
