@@ -6,8 +6,8 @@ export default function LoginSignupScreen({ navigation }) {
     <View style={styles.startScreen}>
         <View style={styles.overlapGroupWrapper}>
             <View style={styles.overlapGroup}>
-                <Image style={styles.HFBackground1} source={require('./assets/HF-background (2).png')} />
-                <Image style={styles.HFBackground2} source={require('./assets/HF-background (2).png')} />
+                <Image style={styles.HFBackground1} source={require('./assets/HF-background.png')} />
+                <Image style={styles.HFBackground2} source={require('./assets/HF-background.png')} />
                 <Image style={styles.HFLogo} source={require('./assets/HF-logo.png')} />
             </View>
         </View>
